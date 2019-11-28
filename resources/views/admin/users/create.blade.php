@@ -14,7 +14,7 @@
            {!! Form::select('role_id',[''=>'Chose Option']+$roles,null,['class'=>'form-control']) !!}
            {!! Form::label('is_active','Status:') !!}
            {!! Form::select('is_active',array(1=>'Active',0=>'Not Active'),0,['class'=>'form-control']) !!}
-           {!! Form::label('file','Name:') !!}
+           {!! Form::label('photo_id','Photo :') !!}
            {!! Form::file('photo_id',null,['class'=>'form-control']) !!}
            {!! Form::label('password','password:') !!}
            {!! Form::password('password',['class'=>'form-control']) !!}
