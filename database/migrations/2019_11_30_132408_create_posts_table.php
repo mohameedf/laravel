@@ -20,6 +20,8 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->text('body');
             $table->timestamps();
+            // Delete a user with all the posts he have its not working cuse its need to refresh migration
+//            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
